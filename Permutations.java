@@ -20,7 +20,11 @@ class Permutation {
 		
 		MyWord.set = input.nextLine();
 		
-		System.out.println("\nВведеная строка: " + MyWord.set);
+		if ( MyWord.set.length() != 12 ) {
+			System.out.println("Неверно введена строка");
+		} else {
+			System.out.println("\nВведеная строка: " + MyWord.set);
+		}
 	
 	}
 	
