@@ -4,10 +4,12 @@ class Permutation {
 
 	String word;
 	
-	public static String findNextPerm (String word) {
+	public static String findNextPerm (StringBuider word) {
 		
 		int i = word.length() - 2, 
 			j = word.length() - 1;
+			
+		char tmp;
 		
 		while ( ( i >= 0 ) && ( word.charAt(i) >= word.charAt(i + 1) ) ) {
 			
@@ -22,6 +24,12 @@ class Permutation {
 			j--;
 			
 		}
+		
+		tmp = word.charAt(i);
+		
+		word.setCharAt(i, word.charAt(j));
+		
+		word.setCharAt(j, tmp);
 		
 		System.out.println("\nНомер j = " + j);
 				
