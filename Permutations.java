@@ -13,6 +13,8 @@ class Permutation {
 			
 		char tmp;
 		
+		System.out.println("i = " + i);
+		
 		while ( ( i >= 0 ) && ( word.charAt(i) >= word.charAt(i + 1) ) ) {
 			
 			i--;
