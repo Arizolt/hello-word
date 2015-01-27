@@ -4,7 +4,9 @@ class Permutation {
 
 	String word;
 	
-	public static String findNextPerm (StringBuider word) {
+	public static String findNextPerm () {
+		
+		StringBuider word = new StringBuilder(this.word);
 		
 		int i = word.length() - 2, 
 			j = word.length() - 1;
@@ -56,7 +58,7 @@ class Permutation {
 			
 		}
 		
-		MyWord.findNextPerm(MyWord.word);
+		MyWord.findNextPerm();
 	
 	}
 	
