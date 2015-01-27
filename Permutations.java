@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Permutation {
+static class Permutation {
 
 	String word;
 	
