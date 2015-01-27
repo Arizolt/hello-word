@@ -58,7 +58,7 @@ class Permutation {
 			
 		}
 		
-		System.out.println("\nНовая строка: " + MyWord.findNextPerm(););
+		System.out.println("\nНовая строка: " + MyWord.findNextPerm());
 	
 	}
 	
