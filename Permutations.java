@@ -38,7 +38,7 @@ class Permutation {
 		return word.toString();
 	}
 	
-	public void main (String Args[]) {
+	public static void main (String Args[]) {
 		
 		Scanner input = new Scanner(System.in);	
 		
@@ -58,9 +58,7 @@ class Permutation {
 			
 		}
 		
-		this.word = MyWord.findNextPerm();
-		
-		System.out.println("\nНовая строка: " + this.word);
+		System.out.println("\nНовая строка: " + MyWord.findNextPerm(););
 	
 	}
 	
