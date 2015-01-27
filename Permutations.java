@@ -38,7 +38,7 @@ class Permutation {
 		return word.toString();
 	}
 	
-	public static void main (String Args[]) {
+	public void main (String Args[]) {
 		
 		Scanner input = new Scanner(System.in);	
 		
