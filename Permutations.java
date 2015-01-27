@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-static class Permutation {
+class Permutation {
 
 	String word;
 	
-	public static String findNextPerm () {
+	public String findNextPerm () {
 		
 		StringBuilder word = new StringBuilder(this.word);
 		
