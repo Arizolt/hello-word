@@ -43,6 +43,8 @@ class Permutation {
 		
 		word.setCharAt(j, tmp);
 		
+		StringBuilder tmpStr = new StringBuilder(word);
+		
 		tmpStr.delete(0, i+1);
 
 		tmpStr.reverse();
