@@ -13,8 +13,6 @@ class Permutation {
 			
 		char tmp;
 		
-		System.out.println("i = " + i);
-		
 		while ( ( i >= 0 ) && ( word.charAt(i) >= word.charAt(i + 1) ) ) {
 			
 			i--;
@@ -26,8 +24,6 @@ class Permutation {
 			return "";
 			
 		}
-		
-		System.out.println("\nНомер i = " + i);
 		
 		while ( ( j >= 0 ) && ( word.charAt(j) <= word.charAt(i) ) ) {
 			
@@ -80,11 +76,13 @@ class Permutation {
 			
 		}
 		
-		//System.out.println("\nНовая строка: " + MyWord.findNextPerm());
+		while ( My.Word.word != "") {
+			
+			MyWord.findNextPerm();
+			System.out.println(MyWord.word);
+			
+		}
 		
-		MyWord.findNextPerm();
-		
-		System.out.println("\nНовая строка: " + MyWord.word);
 	
 	}
 	
