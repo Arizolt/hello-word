@@ -21,7 +21,7 @@ class Permutation {
 		
 		if (i == -1) {
 			
-			MyWord.word = "";
+			this.word = "";
 			
 			return "";
 			
