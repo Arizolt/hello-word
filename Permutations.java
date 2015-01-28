@@ -21,6 +21,12 @@ class Permutation {
 			
 		}
 		
+		if (i == -1) {
+			
+			return "";
+			
+		}
+		
 		System.out.println("\nНомер i = " + i);
 		
 		while ( ( j >= 0 ) && ( word.charAt(j) <= word.charAt(i) ) ) {
@@ -29,13 +35,15 @@ class Permutation {
 			
 		}
 		
+		System.out.println("\nНомер j = " + j);
+		
 		tmp = word.charAt(i);
 		
 		word.setCharAt(i, word.charAt(j));
 		
 		word.setCharAt(j, tmp);
 		
-		System.out.println("\nНомер j = " + j);
+		this.word = word.toString();
 				
 		return word.toString();
 	}
