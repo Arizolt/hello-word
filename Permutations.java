@@ -6,7 +6,7 @@ class Permutation {
 	
 	public String findNextPerm () {
 		
-		StringBuilder word = new StringBuilder(this.word);
+		StringBuilder word = new StringBuilder(this.word), tmpStr;
 		
 		int i = word.length() - 2, 
 			j = word.length() - 1;
@@ -42,6 +42,12 @@ class Permutation {
 		word.setCharAt(i, word.charAt(j));
 		
 		word.setCharAt(j, tmp);
+		
+		tmpStr = word;
+		
+		tmpStr.delete(0, i+1);
+		
+		System.out.println("tmpstr = " + tmpStr);
 		
 		this.word = word.toString();
 				
