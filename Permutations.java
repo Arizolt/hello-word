@@ -53,9 +53,9 @@ class Permutation {
 		
 		System.out.println("tmpStr = " + tmpStr);
 		
-		word.delete(i+1, word.length() );
+		//word.delete(i+1, word.length() );
 		
-		System.out.println("word after delete = " + word);
+		//System.out.println("word after delete = " + word);
 		
 		System.out.println("reverse tmpStr = " + tmpStr);
 		
