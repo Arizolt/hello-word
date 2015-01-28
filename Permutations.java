@@ -33,8 +33,6 @@ class Permutation {
 			
 		}
 		
-		System.out.println("\nНомер j = " + j);
-		
 		tmp = word.charAt(i);
 		
 		word.setCharAt(i, word.charAt(j));
@@ -50,8 +48,6 @@ class Permutation {
 		word.delete(i+1, word.length() );
 		
 		word.append(tmpStr);
-		
-		System.out.println("word = " + word);
 		
 		this.word = word.toString();
 				
