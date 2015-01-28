@@ -45,7 +45,7 @@ class Permutation {
 		
 		this.word = word.toString();
 				
-		return word.toString();
+		return this.word;
 	}
 	
 	public static void main (String Args[]) {
@@ -68,7 +68,9 @@ class Permutation {
 			
 		}
 		
-		System.out.println("\nНовая строка: " + MyWord.findNextPerm());
+		//System.out.println("\nНовая строка: " + MyWord.findNextPerm());
+		
+		System.out.println("\nНовая строка: " + MyWord.word);
 	
 	}
 	
