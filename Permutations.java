@@ -70,6 +70,8 @@ class Permutation {
 		
 		//System.out.println("\nНовая строка: " + MyWord.findNextPerm());
 		
+		MyWord.findNextPerm();
+		
 		System.out.println("\nНовая строка: " + MyWord.word);
 	
 	}
