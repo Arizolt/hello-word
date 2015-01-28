@@ -21,6 +21,8 @@ class Permutation {
 		
 		if (i == -1) {
 			
+			MyWord.word = "";
+			
 			return "";
 			
 		}
@@ -76,7 +78,7 @@ class Permutation {
 			
 		}
 		
-		while ( My.Word.word != "") {
+		while ( MyWord.word != "") {
 			
 			MyWord.findNextPerm();
 			System.out.println(MyWord.word);
