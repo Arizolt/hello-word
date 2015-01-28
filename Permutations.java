@@ -43,19 +43,15 @@ class Permutation {
 		
 		word.setCharAt(j, tmp);
 		
-		StringBuilder tmpStr = new StringBuilder(word);
-		
 		tmpStr.delete(0, i+1);
 
 		tmpStr.reverse();
 		
-		System.out.println("word = " + word + " ; i = " + i + " ; length = " + word.length());
-		
 		word.delete(i+1, word.length() );
 		
-		System.out.println("word = " + word);
+		word.append(tmpStr);
 		
-		System.out.println("reverse tmpStr = " + tmpStr);
+		System.out.println("word = " + word);
 		
 		this.word = word.toString();
 				
