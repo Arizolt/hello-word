@@ -51,7 +51,7 @@ class Permutation {
 		
 		System.out.println("word = " + word + " ; i = " + i + " ; length = " + word.length());
 		
-		word.delete(i+1, word.length() - 1 );
+		word.delete(i+1, word.length() );
 		
 		System.out.println("word = " + word);
 		
