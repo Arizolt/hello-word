@@ -47,11 +47,13 @@ class Permutation {
 		
 		tmpStr.delete(0, i+1);
 		
-		tmpStr.revers();
+		tmpStr.reverse();
 		
 		word.delete(i+1, word.length() )
 		
-		System.out.println("word after delete = ", word);
+		System.out.println("word after delete = " + word);
+		
+		System.out.println("reverse tmpStr = " + tmpStr);
 		
 		this.word = word.toString();
 				
