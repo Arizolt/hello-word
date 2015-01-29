@@ -12,7 +12,7 @@ class Permutation {
 		
 		for ( int i = 0; i < str1.length(); i++) {
 			for (int j = 0; j < str2.length(); j++) {
-				if ( ( str1.charAt(i) == str2.charAt(j) ) && ( isUsed[j] == false ) {
+				if ( ( str1.charAt(i) == str2.charAt(j) ) && ( isUsed[j] == false ) ) {
 					comLet.append( str2.charAt(j) );
 					isUsed[j] = true;
 				}
