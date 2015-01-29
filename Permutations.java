@@ -4,6 +4,25 @@ class Permutation {
 
 	String word;
 	
+	public String findCommonLetters (String str1, str2) {
+		
+		boolean[ str2.length() ] isUsed = {0};
+		
+		StringBuilder comLet = new StringBuilder();
+		
+		for ( int i = 0; i < str1.length(); i++) {
+			for (int j = 0; j < str2.length(); j++) {
+				if ( ( str1.charAt(i) == str2.charAt(j) ) && ( isUsed[j] == false ) {
+					comLet.append( str2.charAt(j) );
+					isUsed[j] = true;
+				}
+			}
+		}
+		
+		return comLet.toString();
+		
+	}
+	
 	public String findNextPerm () {
 		
 		StringBuilder word = new StringBuilder(this.word);
