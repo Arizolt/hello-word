@@ -4,6 +4,16 @@ class Permutation {
 
 	String word;
 	
+	public void findMyWord (){
+		
+		BufferedReader myFile = new BufferedReader ( new FileReader("dict.txt") );
+		
+		for ( int i = 0; i < 20; i++ ) {
+			System.out.println(myFile.readLine());
+		}
+		
+	}
+	
 	public String findComLet (String str1, String str2) {
 		
 		boolean[] isUsed = new boolean[str2.length()];
