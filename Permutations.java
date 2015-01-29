@@ -102,7 +102,7 @@ class Permutation {
 			MyWord.findNextPerm();
 			System.out.println(MyWord.word);
 			
-		*/}
+		}*/
 		
 		System.out.println( MyWord.findComLet( input.nextLine(), input.nextLine() ) );
 		
