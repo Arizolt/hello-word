@@ -4,7 +4,7 @@ class Permutation {
 
 	String word;
 	
-	public String findCommonLetters (String str1, str2) {
+	public String findCommonLetters (String str1, String str2) {
 		
 		boolean[ str2.length() ] isUsed = {0};
 		
