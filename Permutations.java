@@ -104,7 +104,7 @@ class Permutation {
 			
 		*/}
 		
-		System.out.println(MyWord.findComLet(input.nextLine(), input.nextLine(), input.nextLine()));
+		System.out.println(MyWord.findComLet(input.nextLine(), input.nextLine()));
 		
 	
 	}
