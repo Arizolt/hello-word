@@ -20,7 +20,6 @@ class Permutation {
 				}
 			}
 		}
-		System.out.println(comLet.toString());
 		return comLet.toString();
 		
 	}
@@ -85,28 +84,25 @@ class Permutation {
 		
 		Permutation MyWord = new Permutation();
 		
-		/*System.out.println("Введите строку");
-
-		MyWord.word = input.nextLine();
+		String[] strIn = new String[3];
 		
-		if ( MyWord.word.length() != 5 ) {
-			
-			System.out.println("Неверно введена строка");
-			
-		} else {
-			
-			System.out.println("\nВведеная строка: " + MyWord.word);
-			
+		System.out.println("Введите строки");
+		
+		for ( int i = 0; i < 3; i++ ) {
+			System.out.print("Введите " + (i+1) + "строку: ");
+			strIn[i] = input.nextLine();
 		}
 		
-		while ( MyWord.word != "") {
+		MyWord.word = findComLet( strIn[0], strIn[1], strIn[2] );
+		
+		/*while ( MyWord.word != "") {
 			
 			MyWord.findNextPerm();
 			System.out.println(MyWord.word);
 			
 		}*/
 		
-		System.out.println( MyWord.findComLet( input.nextLine(), input.nextLine(), input.nextLine() ) );
+		System.out.println("Общие буквы :" + MyWord.word );
 		
 	
 	}
