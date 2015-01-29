@@ -23,6 +23,10 @@ class Permutation {
 		
 	}
 	
+	public String findComLet (String str1, String str2, String str3) {
+		return findComLet( findComLet(str1,str2), str3 );
+	}
+	
 	public String findNextPerm () {
 		
 		StringBuilder word = new StringBuilder(this.word);
