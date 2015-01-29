@@ -83,7 +83,7 @@ class Permutation {
 		
 		Permutation MyWord = new Permutation();
 		
-		System.out.println("Введите строку");
+		/*System.out.println("Введите строку");
 		
 		MyWord.word = input.nextLine();
 		
@@ -97,12 +97,12 @@ class Permutation {
 			
 		}
 		
-		//while ( MyWord.word != "") {
+		while ( MyWord.word != "") {
 			
 			MyWord.findNextPerm();
 			System.out.println(MyWord.word);
 			
-		//}
+		*/}
 		
 		System.out.println(MyWord.findComLet(input.nextLine(), input.nextLine(), input.nextLine()));
 		
