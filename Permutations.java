@@ -4,9 +4,9 @@ class Permutation {
 
 	String word;
 	
-	public String findCommonLetters (String str1, String str2) {
+	public String findComLet (String str1, String str2) {
 		
-		boolean[ str2.length() ] isUsed = {0};
+		boolean[] isUsed = new boolean[str2.length()];
 		
 		StringBuilder comLet = new StringBuilder();
 		
@@ -93,12 +93,14 @@ class Permutation {
 			
 		}
 		
-		while ( MyWord.word != "") {
+		//while ( MyWord.word != "") {
 			
 			MyWord.findNextPerm();
 			System.out.println(MyWord.word);
 			
-		}
+		//}
+		
+		System.out.println(My.word.findComLet(input.nextLine(), input.nextLine));
 		
 	
 	}
