@@ -100,7 +100,7 @@ class Permutation {
 			
 		//}
 		
-		System.out.println(My.word.findComLet(input.nextLine(), input.nextLine));
+		System.out.println(Myword.findComLet(input.nextLine(), input.nextLine));
 		
 	
 	}
