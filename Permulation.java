@@ -114,6 +114,8 @@ class Permutation {
 		
 		System.out.println("Общие буквы :" + MyWord.word );
 		
+		MyWord.findMyWord();
+		
 	
 	}
 	
