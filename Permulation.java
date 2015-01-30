@@ -1,20 +1,52 @@
 import java.util.Scanner;
+import java.io.*;
 
 class Permutation {
 
 	String word;
 	
-	public void findMyWord (){
+	public void findMyWord () throws IOException{
 		
-		BufferedReader myFile = new BufferedReader ( new FileReader("dict.txt") );
+		String str;
 		
-		for ( int i = 0; i < 20; i++ ) {
+		RandomAccessFile myFile = new RandomAccessFile("C:\\dict.txt","r");
+		
+		for ( int i = 0; i < 20; i++ ){
 			System.out.println(myFile.readLine());
 		}
 		
+		myFile.close();
+		
+		/*try {
+			
+			do {
+				
+				str = myFile.readLine();
+				
+				System.out.println("DEBUG str = " + str);
+				
+				while ( str != null ) {
+					
+					if ( str.equals(this.word) )
+						
+						System.out.println(str);
+						
+					str = myFile.readLine();
+					
+				}
+			
+				this.findNextPerm();
+				
+				myFile.reset();
+			
+			} while ( this.word != "" );
+	
+		} finally {
+			if ( myFile != null) myFile.close();
+		}*/
 	}
 	
-	public String findComLet (String str1, String str2) {
+	public static String findComLet (String str1, String str2) {
 		
 		boolean[] isUsed = new boolean[str2.length()];
 		
@@ -34,7 +66,7 @@ class Permutation {
 		
 	}
 	
-	public String findComLet (String str1, String str2, String str3) {
+	public static String findComLet (String str1, String str2, String str3) {
 		return findComLet( findComLet(str1,str2), str3 );
 	}
 	
@@ -90,7 +122,7 @@ class Permutation {
 	
 	public static void main (String Args[]) {
 		
-		Scanner input = new Scanner(System.in,"cp866");	
+		Scanner input = new Scanner(System.in,"UTF-8");	
 		
 		Permutation MyWord = new Permutation();
 		
@@ -105,16 +137,15 @@ class Permutation {
 		
 		MyWord.word = findComLet( strIn[0], strIn[1], strIn[2] );
 		
-		/*while ( MyWord.word != "") {
-			
-			MyWord.findNextPerm();
-			System.out.println(MyWord.word);
-			
-		}*/
-		
 		System.out.println("Общие буквы :" + MyWord.word );
 		
-		MyWord.findMyWord();
+		try {
+		
+			MyWord.findMyWord();
+			
+		} catch (IOException e) {
+			System.exit(0);
+		}
 		
 	
 	}
