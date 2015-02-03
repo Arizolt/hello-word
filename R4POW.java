@@ -10,13 +10,28 @@ public class R4POW {
 
         String str;
 
-        RandomAccessFile myFile = new RandomAccessFile("C:\\dict.txt","r");
 
-        for (int i = 0; i < 10; i++) {
 
-            str = myFile.readLine();
+        int i = 0;
 
-            System.out.println(str);
+        BufferedReader myFile = new BufferedReader(
+                new InputStreamReader(
+                        new FileInputStream(
+                                new File("C:\\dict.txt") ), "UTF8" ) );
+
+        while ((str = myFile.readLine()) != null) {
+
+            dict[i] = str;
+
+            i++;
+
+        }
+
+        String[] dict = new String[i];
+
+        for ( i = 0; i < dict.length; i++ ) {
+
+            System.out.println( dict[i] );
 
         }
 
