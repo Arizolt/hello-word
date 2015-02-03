@@ -18,14 +18,16 @@ public class R4POW {
                 new InputStreamReader(
                         new FileInputStream(
                                 new File("C:\\dict.txt") ), "UTF8" ) );
+                                
+        	System.out.println("Длина массива = " + myFile.length);
 
-        while ((str = myFile.readLine()) != null) {
+        //while ((str = myFile.readLine()) != null) {
 
-            dict[i] = str;
+          //  dict[i] = str;
 
-            i++;
+            //i++;
 
-        }
+        //}
 
         String[] dict = new String[i];
 
