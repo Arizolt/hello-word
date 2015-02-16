@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
 
@@ -10,26 +11,22 @@ public class R4POW {
 
         String str;
 
-
-
         int i = 0;
+
+        ArrayList dict = new ArrayList();
 
         BufferedReader myFile = new BufferedReader(
                 new InputStreamReader(
                         new FileInputStream(
                                 new File("C:\\dict.txt") ), "UTF8" ) );
-                                
-        	System.out.println("Длина массива = " + myFile.length);
 
-        //while ((str = myFile.readLine()) != null) {
+        while ((str = myFile.readLine()) != null) {
 
-          //  dict[i] = str;
+            dict[i] = str;
 
-            //i++;
+            i++;
 
-        //}
-
-        String[] dict = new String[i];
+        }
 
         for ( i = 0; i < dict.length; i++ ) {
 
