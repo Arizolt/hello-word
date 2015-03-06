@@ -22,47 +22,23 @@ public class R4POW {
 
         while ((str = myFile.readLine()) != null) {
 
-            dict[i] = str;
-
-            i++;
+            dict.add( str );
 
         }
 
-        for ( i = 0; i < dict.length; i++ ) {
+        for ( i = 0; i < dict.size(); i++ ) {
 
-            System.out.println( dict[i] );
+            if ( this.word.equals(dict.get(i)) ) {
+
+                System.out.println("Слово = " + this.word);
+
+            }
+            //System.out.println( dict.get( i ) );
 
         }
 
         myFile.close();
 
-		/*try {
-
-			do {
-
-				str = myFile.readLine();
-
-				System.out.println("DEBUG str = " + str);
-
-				while ( str != null ) {
-
-					if ( str.equals(this.word) )
-
-						System.out.println(str);
-
-					str = myFile.readLine();
-
-				}
-
-				this.findNextPerm();
-
-				myFile.reset();
-
-			} while ( this.word != "" );
-
-		} finally {
-			if ( myFile != null) myFile.close();
-		}*/
     }
 
     public static String findComLet (String str1, String str2) {
@@ -157,6 +133,8 @@ public class R4POW {
         MyWord.word = findComLet( strIn[0], strIn[1], strIn[2] );
 
         System.out.println("Общие буквы :" + MyWord.word );
+
+        while (MyWord.findNextPerm().)
 
         try {
 
